@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Browse Folders</title>
+
+<script type="text/javascript">
+function getFolder(){
+  return showModalDialog("folderDialog.html","","width:400px;height:400px;resizeable:yes;");
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" name="yourFieldName"><input type="button" value="Browse..." onclick="this.form.yourFieldName.value=getFolder()">
+</form>
+</body>
+</html>
